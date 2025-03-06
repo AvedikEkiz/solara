@@ -68,8 +68,8 @@
         {# {% include "transition-domino.html" %} #}
         {% include "loader-" ~ theme.loader ~ ".html" %}
         <v-overlay style="z-index: 100002;" :value="(connectionStatus != 'connected') & wasConnected">
-            <v-progress-circular indeterminate size="128" style="text-align: center;">Server
-                disconnected.</v-progress-circular>
+            <v-progress-circular indeterminate size="128" style="text-align: center;">Сервер
+                отключен</v-progress-circular>
         </v-overlay>
 
         <v-dialog v-model="needsRefresh" width="500">
